@@ -1,0 +1,270 @@
+# ============================================================================
+# CYRA - RECONNAISSANCE FACIALE
+# .gitignore - Fichiers et dossiers à ignorer par Git
+# ============================================================================
+
+# ============================================================================
+# ENVIRONNEMENT PYTHON
+# ============================================================================
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Fichiers de configuration Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ============================================================================
+# MODÈLES ET DONNÉES SENSIBLES
+# ============================================================================
+
+# Modèles DeepFace (téléchargés automatiquement)
+.deepface/
+deepface_models/
+models/
+weights/
+*.h5
+*.pb
+*.ckpt
+*.model
+
+# Images et données personnelles
+data/
+images/
+faces/
+dataset/
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+
+# Fichiers de sauvegarde et caches
+*.pkl
+*.pickle
+*.cache
+*.npy
+*.npz
+
+# ============================================================================
+# BASE DE DONNÉES ET CONFIGURATION
+# ============================================================================
+
+# Fichiers de configuration sensibles
+config.py
+config.json
+.env
+.env.local
+.env.production
+secrets.json
+
+# Bases de données locales
+*.db
+*.sqlite
+*.sqlite3
+database.sql
+dump.sql
+
+# Logs de base de données
+postgresql.log
+*.log
+logs/
+
+# ============================================================================
+# DÉVELOPPEMENT ET OUTILS
+# ============================================================================
+
+# IDEs et éditeurs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
+jupyter_notebook_config.py
+
+# PyCharm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Spyder
+.spyderproject
+.spyproject
+
+# ============================================================================
+# SYSTÈME ET TEMPORAIRES
+# ============================================================================
+
+# Fichiers système
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Fichiers temporaires
+temp/
+tmp/
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak
+*.backup
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# ============================================================================
+# TESTS ET COUVERTURE
+# ============================================================================
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# ============================================================================
+# DOCUMENTATION
+# ============================================================================
+
+# Documentation générée
+docs/_build/
+docs/build/
+site/
+
+# ============================================================================
+# DÉPLOIEMENT ET PRODUCTION
+# ============================================================================
+
+# Docker
+Dockerfile.prod
+docker-compose.prod.yml
+.dockerignore
+
+# Fichiers de déploiement
+deploy.sh
+production_settings.py
+
+# Certificats et clés
+*.pem
+*.key
+*.crt
+*.csr
+*.p12
+
+# ============================================================================
+# SPÉCIFIQUE AU PROJET CYRA
+# ============================================================================
+
+# Captures d'écran de test
+screenshots/
+captures/
+test_images/
+
+# Vidéos de démonstration
+demos/
+videos/
+*.mp4
+*.avi
+*.mov
+
+# Fichiers de calibration webcam
+calibration/
+camera_params.json
+
+# Profiling et performances
+profile_results/
+*.prof
+
+# ============================================================================
+# DÉPENDANCES ET CACHES SPÉCIALISÉS
+# ============================================================================
+
+# TensorFlow
+.tf_cache/
+tf_model.h5
+
+# OpenCV cache
+.opencv/
+
+# NumPy cache
+.numpy_cache/
+
+# Matplotlib
+.matplotlib/
+
+# ============================================================================
+# SAUVEGARDES ET VERSIONS
+# ============================================================================
+
+# Anciennes versions de fichiers
+*.old
+*.orig
+*_backup
+*_old
+version_*
+
+# Fichiers de migration
+migrations/
+migration_*.sql
+
+# ============================================================================
+# NOTES POUR L'ÉQUIPE
+# ============================================================================
+
+# Pour ajouter des exceptions à ce .gitignore :
+# - Utilisez ! devant le nom du fichier
+# Exemple : !important_config.json
+
+# Pour ignorer tout sauf certains fichiers dans un dossier :
+# folder/*
+# !folder/keep_this_file.txt
+
+# Pour ignorer de manière conditionnelle :
+# Créez des .gitignore spécifiques dans les sous-dossiers
