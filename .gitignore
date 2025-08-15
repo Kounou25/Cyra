@@ -53,11 +53,13 @@ weights/
 *.ckpt
 *.model
 
-# Images et données personnelles
-data/
-images/
-faces/
-dataset/
+# Images et données personnelles (MAIS GARDER LES EXEMPLES)
+data/personal/
+images/personal/
+faces/real/
+dataset/personal/
+
+# Ignorer les vraies photos mais garder les exemples
 *.jpg
 *.jpeg
 *.png
@@ -65,6 +67,20 @@ dataset/
 *.bmp
 *.tiff
 *.webp
+
+# EXCEPTIONS : Garder les exemples et documentation
+!examples/*.jpg
+!examples/*.jpeg
+!examples/*.png
+!docs/*.jpg
+!docs/*.jpeg
+!docs/*.png
+!screenshots/*.jpg
+!screenshots/*.jpeg
+!screenshots/*.png
+!demo/*.jpg
+!demo/*.jpeg
+!demo/*.png
 
 # Fichiers de sauvegarde et caches
 *.pkl
@@ -85,12 +101,22 @@ config.json
 .env.production
 secrets.json
 
-# Bases de données locales
+# GARDER LES FICHIERS DE CONFIG D'EXEMPLE
+!config.example.py
+!config.template.json
+!.env.example
+
+# Bases de données locales (garder les scripts de structure)
 *.db
 *.sqlite
 *.sqlite3
 database.sql
 dump.sql
+
+# GARDER LES SCRIPTS DE STRUCTURE DB
+!database_structure.sql
+!create_tables.sql
+!schema.sql
 
 # Logs de base de données
 postgresql.log
@@ -202,17 +228,27 @@ production_settings.py
 # SPÉCIFIQUE AU PROJET CYRA
 # ============================================================================
 
-# Captures d'écran de test
-screenshots/
-captures/
-test_images/
+# Captures d'écran de test (garder les démos publiques)
+screenshots/private/
+captures/personal/
+test_images/real/
 
-# Vidéos de démonstration
-demos/
-videos/
+# GARDER LES CAPTURES POUR LA DOCUMENTATION
+!screenshots/demo/
+!screenshots/interface/
+!captures/example/
+
+# Vidéos de démonstration (garder les exemples publics)
+demos/private/
+videos/personal/
 *.mp4
 *.avi
 *.mov
+
+# GARDER LES DÉMOS PUBLIQUES
+!demos/public/*.mp4
+!demos/example/*.avi
+!videos/demo/*.mov
 
 # Fichiers de calibration webcam
 calibration/
